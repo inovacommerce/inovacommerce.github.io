@@ -15,7 +15,7 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/all.min.css" rel="stylesheet" />
         <script src="js/jquery.min.js"></script>
-          
+        <script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>
     </head>
     <body>
         <!-- Responsive navbar-->
@@ -423,7 +423,7 @@
                             <label for="message" class="text-left"><i class="fa fa-comment"></i> Mensagem:</label>
                             <textarea class="form-control" id="message" rows="5" for="message" name="message"></textarea>
                         </div>
-                        <input type="hidden" name="captcha" value="g-recaptcha-response"><script type="text/javascript" src="https://www.google.com/recaptcha/api.js" async defer></script>
+                        <input type="hidden" name="captcha" value="g-recaptcha-response">
                         <div class="g-recaptcha" data-sitekey="6LeVY1ImAAAAAMsp39BbojZOdHYn34azZIiHISqq" data-theme="light" data-type="image" data-size="normal"></div>
                         <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Enviar</button>
                     </form>
