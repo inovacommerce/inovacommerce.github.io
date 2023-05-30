@@ -15,6 +15,7 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/all.min.css" rel="stylesheet" />
         <script src="js/jquery.min.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
           
     </head>
     <body>
@@ -423,7 +424,7 @@
                             <label for="message" class="text-left"><i class="fa fa-comment"></i> Mensagem:</label>
                             <textarea class="form-control" id="message" rows="5" for="message" name="message"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Enviar</button>
+                        <button class="btn btn-primary" data-sitekey="6LeVY1ImAAAAAMsp39BbojZOdHYn34azZIiHISqq" data-callback='onSubmit' data-action='submit'><i class="fa fa-paper-plane"></i> Enviar</button>
                     </form>
                           
                 </div>
@@ -457,6 +458,9 @@ text-blue {
 }
 </style>
 <script>
+    function onSubmit(token) {
+        document.getElementById("contact-form").submit();
+   }
     window.addEventListener('scroll', function() {
       var backToTopButton = document.querySelector('.back-to-top');
       if (window.pageYOffset > 0) {
