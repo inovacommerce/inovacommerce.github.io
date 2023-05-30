@@ -390,7 +390,7 @@
                     <h2 class="fw-bolder">Entre em contato:</h2>
                 </div>
                 <div class="text-left mb-5">
-                    <form id="contact-form" target="_self" method="post" action="https://www.google.com/recaptcha/api/siteverify">
+                    <form id="contact-form" target="_self" method="post" action="https://a8381m4t55.execute-api.us-east-2.amazonaws.com/latest/contact">
                         <div class="row">
                             <div class="col-md-6">
                             <div class="form-group mb-3">
@@ -471,7 +471,7 @@ text-blue {
         var url = form.attr('action');
         $.ajax({
             type: "POST",
-            url: "https://a8381m4t55.execute-api.us-east-2.amazonaws.com/latest/contact",
+            url: url,
             data: form.serialize(), // envio como x-www-form-urlencoded
             dataType: 'text', // resposta do servidor vazia exige 'text'
             success: function(data) {
