@@ -424,6 +424,7 @@
                             <label for="message" class="text-left"><i class="fa fa-comment"></i> Mensagem:</label>
                             <textarea class="form-control" id="message" rows="5" for="message" name="message"></textarea>
                         </div>
+                        {{captcha}}
                         <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Enviar</button>
                     </form>
                           
@@ -490,7 +491,7 @@ text-blue {
             e.preventDefault();
             grecaptcha.ready(function() {
                 grecaptcha.execute('6LeVY1ImAAAAAMsp39BbojZOdHYn34azZIiHISqq', {action: 'submit'}).then(function(token) {
-                    formSubmit($(this));
+                    formSubmit($("#contact-form"));
                     });
             });
         });
