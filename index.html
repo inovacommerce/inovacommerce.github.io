@@ -395,13 +395,13 @@
                             <div class="col-md-6">
                             <div class="form-group mb-3">
                                 <label for="name" class="text-left"><i class="fa fa-user"></i> Nome:</label>
-                                <input type="text" class="form-control" id="name" placeholder="Digite seu nome">
+                                <input type="text" class="form-control" id="name" for="name" name="name" placeholder="Digite seu nome">
                             </div>
                             </div>
                             <div class="col-md-6">
                             <div class="form-group mb-3">
                                 <label for="email" class="text-left"><i class="fa fa-envelope"></i> Email:</label>
-                                <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+                                <input type="email" class="form-control" id="email" for="email" name="email" placeholder="Digite seu email">
                             </div>
                             </div>
                         </div>
@@ -409,19 +409,19 @@
                             <div class="col-md-6">
                             <div class="form-group mb-3">
                                 <label for="phone" class="text-left"><i class="fa fa-phone"></i> Telefone:</label>
-                                <input type="tel" class="form-control" id="phone" placeholder="Digite seu telefone">
+                                <input type="tel" class="form-control" id="phone" for="phone" name="phone" placeholder="Digite seu telefone">
                             </div>
                             </div>
                             <div class="col-md-6">
                             <div class="form-group mb-3">
                                 <label for="subject" class="text-left"><i class="fa fa-tag"></i> Assunto:</label>
-                                <input type="text" class="form-control" id="subject" placeholder="Digite o assunto">
+                                <input type="text" class="form-control" id="subject" for="subject" name="subject" placeholder="Digite o assunto">
                             </div>
                             </div>
                         </div>
                         <div class="form-group mb-3">
                             <label for="message" class="text-left"><i class="fa fa-comment"></i> Mensagem:</label>
-                            <textarea class="form-control" id="message" rows="5"></textarea>
+                            <textarea class="form-control" id="message" rows="5" for="message" name="message"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Enviar</button>
                     </form>
@@ -487,6 +487,7 @@ text-blue {
     $(document).ready(function() {
         $("#contact-form").submit(function(e) {
             e.preventDefault();
+
             formSubmit($(this));
         });
     })
