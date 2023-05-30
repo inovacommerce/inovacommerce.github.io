@@ -424,7 +424,6 @@
                             <textarea class="form-control" id="message" rows="5" for="message" name="message"></textarea>
                         </div>
                         <div id='recaptcha' class="g-recaptcha" data-sitekey="6LdTzlImAAAAAMeuCHpBoqQsZIUIcLbGINCNr7Si" data-callback="sendForm" data-size="normal"></div>
-                        <button type='submit'>Enviar</button>
                     </form>
                           
                 </div>
@@ -459,7 +458,6 @@ text-blue {
 </style>
 <script>
    function sendForm(){
-        alert("reCAPTCHA funcionou");
         form = $("#contact-form");
         var url = form.attr('action');
         $.ajax({
