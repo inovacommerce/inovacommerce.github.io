@@ -423,7 +423,11 @@
                             <label for="message" class="text-left"><i class="fa fa-comment"></i> Mensagem:</label>
                             <textarea class="form-control" id="message" rows="5" for="message" name="message"></textarea>
                         </div>
-                        <div id='recaptcha' class="g-recaptcha" data-sitekey="6LdTzlImAAAAAMeuCHpBoqQsZIUIcLbGINCNr7Si" data-callback="sendForm" data-size="normal"></div>
+                        
+                        <button id="btn-submit" type="submit" class="btn btn-primary" disabled="true"><i class="fa fa-paper-plane"></i> Enviar</button>
+                    </form>
+                    <form id="recaptcha-form" target="_self" method="post" action="https://a8381m4t55.execute-api.us-east-2.amazonaws.com/latest/contact">
+                    <div id='recaptcha' class="g-recaptcha" data-sitekey="6LdTzlImAAAAAMeuCHpBoqQsZIUIcLbGINCNr7Si" data-callback="captchOk" data-size="normal"></div>
                     </form>
                           
                 </div>
@@ -457,6 +461,10 @@ text-blue {
 }
 </style>
 <script>
+    function captchOk() {
+        btn = $("#btn-submit");
+        btn.disabled = false;
+    }
    function sendForm(){
         form = $("#contact-form");
         var url = form.attr('action');
@@ -486,7 +494,7 @@ text-blue {
     });
     
     $(document).ready(function() {
-        $("#contact-form").submit(function(e) {
+        $("#recaptcha-form").submit(function(e) {
             e.preventDefault();
             let name = document.querySelector('#name');
             let email = document.querySelector('#email');
@@ -496,6 +504,18 @@ text-blue {
                 alert('Nome, Email, telefone e mensagem são Obrigatorios');
             } else{
                 grecaptcha.execute();
+            }       
+            });
+        $("#contact-form").submit(function(e) {
+            e.preventDefault();
+            let name = document.querySelector('#name');
+            let email = document.querySelector('#email');
+            let phone = document.querySelector('#phone');
+            let message = document.querySelector('#message');
+            if(!name.value || !email.value || !phone.value || !message.value) {
+                alert('Nome, Email, telefone e mensagem são Obrigatorios');
+            } else{
+                sendForm();
             }       
             });
     })
