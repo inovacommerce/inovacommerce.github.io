@@ -521,7 +521,15 @@ text-blue {
     $(document).ready(function() {
         $("#contact-form").submit(function(e) {
             e.preventDefault();
-            sendForm($(this));
+            let name = document.querySelector('#name');
+            let email = document.querySelector('#email');
+            let phone = document.querySelector('#phone');
+            let message = document.querySelector('#message');
+            if(!name.value || !email.value || !phone.value || !message.value) {
+                alert('Nome, Email, telefone e mensagem são Obrigatorios');
+            } else{
+                sendForm($(this));
+            }
         });
     })
     window.addEventListener('scroll', function() {
