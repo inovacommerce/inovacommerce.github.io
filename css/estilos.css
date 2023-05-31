@@ -1,0 +1,15 @@
+.bg-escuro {
+    background-color: #101728;
+}
+.bg-imagem-page-1{
+    position: relative;
+    background-color: #101728;
+    background-image: url("../assets/bg-page-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.shadow-escuro{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.8) !important
+}

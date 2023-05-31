@@ -14,6 +14,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/all.min.css" rel="stylesheet" />
+        <link href="css/estilos.css" rel="stylesheet">
         <script src="js/jquery.min.js"></script>
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </head>
@@ -35,33 +36,56 @@
             </div>
         </nav>
         <!-- Header-->
-        <header class="bg-dark py-5" id="sobre">
+        <header class="py-5 bg-imagem-page-1" id="sobre">
             <div class="container px-5">
                 <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-6">
+                    <div class="col-lg-7">
                         <div class="text-center my-2">
-                            <h1 class="display-5 fw-bolder text-white mb-2"><font color="#ff3c5f">Gestão</font> de e-commerce de ponta a ponta</h1>
-                            <p class="lead text-white-50 mb-4">Sua operação de e-commerce não dá <font color="#ff3c5f">resultados</font>? Somos a <font color="#ff3c5f">solução completa</font> para fazer o seu negócio decolar!</p>
-                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center mt-5">
-                                <a class="px-4 me-sm-3 button_custom" href="#contato">QUERO VENDER MAIS!</a>
-                            </div>
+                            <p><h1 class="display-3 fw-bolder text-white mb-2"><font color="#ff3c5f">Gestão</font> de e-commerce de ponta a ponta</h1></p><br />
+                            <p class="h4 text-white-50 mb-4">Sua operação de e-commerce não dá <font color="#ff3c5f">resultados</font>?<p><p class="h4 text-white-50 mb-4">Somos a <font color="#ff3c5f">solução completa</font> para fazer o seu negócio decolar!</p>
+                            
                         </div>
                     </div>
                 </div>
+                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center mt-5">
+                    <a class="px-4 me-sm-3 button_custom" href="#contato">QUERO VENDER MAIS</a>
+                </div>
             </div>
         </header>
+        <!-- Testimonials section-->
+        <section class="py-5 border-bottom" id="cases">
+            <div class="container px-5 my-3 px-5">
+                <div class="text-center mb-5">
+                    <h1 class="display-1 fw-bolder text-decoration-none mb-2">Empresas <font color="#ff3c5f">impactadas</font><br>com a gestão Inova</h1>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <!-- Testimonial 0-->
+                    <div class="row flex-wrap mb-4 mt-4">
+                        <div class="flex-shrink-0 col-md-3 justify-content-center d-flex justify-content-center align-items-center"><!--i class="bi bi-chat-right-quote-fill text-primary fs-1"></i--><a href="https://desmodus.com.br" class="text-decoration-none" target="_blank"><img src="assets/desmodus.png" class="img-fluid mx-auto" /></a></div>
+                        <div class="flex-shrink-0 col-md-3 justify-content-center d-flex justify-content-center align-items-center"><!--i class="bi bi-chat-right-quote-fill text-primary fs-1"></i--><a href="https://bazaremcasa.com" class="text-decoration-none" target="_blank"><img src="assets/bazar.png" class="img-fluid mx-auto" /></a></div>
+                        <div class="flex-shrink-0 col-md-3 justify-content-center d-flex justify-content-center align-items-center"><!--i class="bi bi-chat-right-quote-fill text-primary fs-1"></i--><a href="https://milicopadrao.com.br" class="text-decoration-none" target="_blank"><img src="assets/milico.png" class="img-fluid mx-auto" /></a></div>
+                        <div class="flex-shrink-0 col-md-3 justify-content-center d-flex justify-content-center align-items-center"><!--i class="bi bi-chat-right-quote-fill text-primary fs-1"></i--><a href="https://sopecas.com.br" class="text-decoration-none" target="_blank"><img src="assets/sopecas.png" class="img-fluid mx-auto" /></a></div>
+                    </div>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center mt-5">
+                        <a class="px-4 me-sm-3 button_custom" href="#contato">QUERO SER IMPACTADO</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Features section-->
-        <section class="py-5 border-bottom" id="solucoes">
+        <section class="bg-escuro py-5 border-bottom" id="solucoes">
             <div class="container px-5 my-0">
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-6">
-                        <div class="text-center mt-0 mb-5">
+                        <div class="text-white text-center mt-0 mb-5">
                             <h1 class="display-5 fw-bolder text-decoration-none mb-2">Como a Inova pode <font color="#ff3c5f">transformar</font> seu negócio online?</h1>
                         </div>
                     </div>
                 </div>
                 <div class="row gx-5">
-                    <div class="col-lg-3 mb-5 mb-lg-0">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-3 shadow-escuro p-3 mb-3 mr-3 bg-escuro rounded text-white">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
                         <h2 class="h4 fw-bolder">MARKETING</h2>
                         <p><ul>
@@ -75,7 +99,8 @@
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
-                    <div class="col-lg-3 mb-5 mb-lg-0">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-3 shadow-escuro p-3 mb-3 mr-3 bg-escuro rounded text-white">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
                         <h2 class="h4 fw-bolder">PLATAFORMAS E TECNOLOGIAS</h2>
                         <p><ul>
@@ -88,7 +113,9 @@
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
-                    <div class="col-lg-3 mb-5 mb-lg-0">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-3 shadow-escuro p-3 mb-3 mr-3 bg-escuro rounded text-white">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
                         <h2 class="h4 fw-bolder">TREINAMENTOS</h2>
                         <p><ul>
@@ -101,7 +128,8 @@
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
-                    <div class="col-lg-3 mb-5 mb-lg-0">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-3 shadow-escuro p-3 mb-3 mr-3 bg-escuro rounded text-white">
                         <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
                         <h2 class="h4 fw-bolder">ATENDIMENTO</h2>
                         <p><ul>
@@ -115,6 +143,70 @@
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
+                    <div class="col-lg-2"></div>
+                </div>
+                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center mt-5">
+                    <a class="px-4 me-sm-3 button_custom" href="#contato">QUERO MEU NEGÓCIO TRANSFORMADO</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials section-->
+        <section class="bg-light py-1 border-bottom" id="cases">
+            <div class="container px-3 my-3 px-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder display-5">CASES DE <font color="#ff3c5f">SUCESSO</font></h2>
+                </div>
+                <div class="row gx-3 justify-content-center">
+                    <div class="row flex-wrap">
+                        <!-- Testimonial 1-->
+                        <div class="card col-lg-5">
+                            <div class="card-body p-6">
+                                    <div class="flex-shrink-0"><!--i class="bi bi-chat-right-quote-fill text-primary fs-1"></i--><a href="https://bazaremcasa.com" class="text-decoration-none" target="_blank"><img src="assets/bazar.png" class="img-fluid mx-auto" /></a></div>
+                                    <div class="h3 justify-content-center align-items-center">
+                                        Redução de <span class="text-danger">70%</span> nos
+                                            preços de frete,
+                                            implementação de
+                                            plataforma e estratégias
+                                            comerciais que fizeram
+                                            um crescimento de <span class="text-danger">200%</span>
+                                            em 6 meses
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2"></div>
+                        <!-- Testimonial 2-->
+                        <div class="card col-lg-5">
+                            <div class="card-body p-4">
+                                <div class="flex-wrap">
+                                    <div class="flex-shrink-0"><!--i class="bi bi-chat-right-quote-fill text-primary fs-1"></i--><a href="https://milicopadrao.com.br" class="text-decoration-none" target="_blank"><img src="assets/milico.png" class="img-fluid mx-auto" /></a></div>
+                                    <div class="h3 justify-content-center justify-content-center align-items-center">
+                                        <p class="mb-1">Implementação de nova
+                                            plaforma juntamente com
+                                            estratégias comerciais
+                                            resultaram em um
+                                            crescimento de <span class="text-danger">500%</span> em
+                                            apenas 1 ano</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center mt-5">
+                    <a class="px-4 me-sm-3 button_custom" href="#contato">QUERO TER RESULTADOS</a>
+                </div>
+            </div>
+        </section>
+        <section class="bg-escuro py-5 border-bottom" id="solucoes">
+            <div class="container px-5 my-0">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="text-white text-left mt-0 mb-5 d-flex justify-content-center align-items-center"  style="height: 588px;">
+                            <h1 class="display-4 fw-bolder text-decoration-none mb-2">Você está a um passo de começar a ter <font color="#ff3c5f">resultados</font> reais com seu negócio online!</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 flex-shrink-0 justify-content-center justify-content-center align-items-center"><img src="assets/bg-last-page.png" class="img-fluid mx-auto" /></div>
                 </div>
             </div>
         </section>
@@ -322,66 +414,7 @@
                 </div>
             </div>
         </section-->
-        <!-- Testimonials section-->
-        <section class="bg-light py-5 border-bottom" id="cases">
-            <div class="container px-5 my-3 px-5">
-                <div class="text-center mb-5">
-                    <h2 class="fw-bolder">CASES DE <font color="#ff3c5f">SUCESSO</font></h2>
-                </div>
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-6">
-                        <!-- Testimonial 0-->
-                        <div class="card mb-4">
-                            <div class="card-body p-4">
-                                <div class="row flex-wrap">
-                                    <div class="flex-shrink-0 col-sm-6"><!--i class="bi bi-chat-right-quote-fill text-primary fs-1"></i--><a href="https://desmodus.com.br" class="text-decoration-none" target="_blank"><img src="assets/desmodus.png" class="img-fluid mx-auto" /></a></div>
-                                    <div class="col-sm-6 justify-content-center d-flex align-items-center" style="height: 122px;">
-                                        Redução nos
-                                            preços de frete,
-                                            implementação de
-                                            plataforma e estratégias
-                                            comerciais
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Testimonial 1-->
-                        <div class="card mb-4">
-                            <div class="card-body p-4">
-                                <div class="row flex-wrap">
-                                    <div class="flex-shrink-0 col-sm-6"><!--i class="bi bi-chat-right-quote-fill text-primary fs-1"></i--><a href="https://bazaremcasa.com" class="text-decoration-none" target="_blank"><img src="assets/bazar.png" class="img-fluid mx-auto" /></a></div>
-                                    <div class="col-sm-6 justify-content-center align-items-center" style="height: 132px;">
-                                        Redução de <span class="text-danger">70%</span> nos
-                                            preços de frete,
-                                            implementação de
-                                            plataforma e estratégias
-                                            comerciais que fizeram
-                                            um crescimento de <span class="text-danger">200%</span>
-                                            em 6 meses
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Testimonial 2-->
-                        <div class="card">
-                            <div class="card-body p-4">
-                                <div class="row flex-wrap">
-                                    <div class="flex-shrink-0 col-sm-6"><!--i class="bi bi-chat-right-quote-fill text-primary fs-1"></i--><a href="https://milicopadrao.com.br" class="text-decoration-none" target="_blank"><img src="assets/milico.png" class="img-fluid mx-auto" /></a></div>
-                                    <div class="col-sm-6 justify-content-center d-flex justify-content-center align-items-center" style="height: 151px;">
-                                        <p class="mb-1">Implementação de nova
-                                            plaforma juntamente com
-                                            estratégias comerciais
-                                            resultaram em um
-                                            crescimento de <span class="text-danger">500%</span> em
-                                            apenas 1 ano</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
         <!-- Contact section-->
         <section class="py-5" id="contato">
             <div class="container px-5 my-5 px-5">
@@ -423,14 +456,14 @@
                             <label for="message" class="text-left"><i class="fa fa-comment"></i> Mensagem:</label>
                             <textarea class="form-control" id="message" rows="5" for="message" name="message"></textarea>
                         </div>
-                        <button id="btn-submit" data-sitekey="6LdTzlImAAAAAMeuCHpBoqQsZIUIcLbGINCNr7Si" data-callback="sendForm" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Enviar</button>
+                        <button id="btn-submit" type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Enviar</button>
                     </form>
                           
                 </div>
             </div>
         </section>
         <!-- Footer-->
-        <footer class="py-5 bg-dark">
+        <footer class="py-5 bg-escuro">
             
             <div class="container px-5"><p class="m-0 text-center text-white"><span> Inova Commerce Logística e Marketing Digital Ltda - CNPJ: 47.862.466/0001-60 </span><span>  Endereço: <span>Rua dos Capuchinhos, 55 - Saguaçu, Joinville - SC, 89221-210</span> </span>
                 <br><span>Copyright: www.inovacommerce.com.br &copy; Todos os direitos reservados
@@ -457,8 +490,7 @@ text-blue {
 }
 </style>
 <script>
-   function sendForm(){
-        form = $("#contact-form");
+   function sendForm(form){
         var url = form.attr('action');
         $.ajax({
             type: "POST",
@@ -476,6 +508,12 @@ text-blue {
         });
         return false;
     }
+    $(document).ready(function() {
+        $("#contact-form").submit(function(e) {
+            e.preventDefault();
+            sendForm($(this));
+        });
+    })
     window.addEventListener('scroll', function() {
       var backToTopButton = document.querySelector('.back-to-top');
       if (window.pageYOffset > 0) {

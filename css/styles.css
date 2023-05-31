@@ -11296,12 +11296,13 @@ textarea.form-control-lg {
 }
 
 .button_custom {
-   border-radius: 10px;
+  border-radius: 10px;
   padding:1em;
   font-size:1.2em;
   padding:.5rem 3rem;
-  color: white;
+  color: black;
   text-decoration:none;
+  font-weight: bold;
   border: solid 3px transparent;
   background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #202c48, #ff3c5f) !important;
   background-origin: border-box;
@@ -11310,5 +11311,5 @@ textarea.form-control-lg {
 }
 .button_custom:hover {
   box-shadow: none;
-  color: white;
+  color: black;
 }
