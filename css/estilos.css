@@ -9,7 +9,9 @@
     background-position: center;
 }
 
-
+.sem-quebra {
+    white-space: nowrap;
+}
 .shadow-escuro{
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.8) !important
 }
